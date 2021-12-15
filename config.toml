@@ -1,5 +1,5 @@
 # Page settings
-baseURL = "https://attixzhangcs.github.io/azhang.github.io/resume/"
+baseURL = "https://attixzhangcs.github.io/resume.github.io/"
 languageCode = "en-us"
 title = "Attix Zhang resume"
 theme = "hugo-devresume-theme"
@@ -18,7 +18,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
         name = "Attix Zhang"
         tagline = "Software Engineer"
-        avatar = "avatar.png"
+        avatar = "azhang.jpeg"
 
     [params.contact]
         enable = true
@@ -36,10 +36,10 @@ googleAnalytics = "UA-XXXXXXX-Y"
         icon = "fab fa-weixin"
         #url = "weixin://"
         text = "AttixZhang"
-        #[[params.contact.list]]
-        #icon = "fas fa-globe"
-        #url = "#"
-        #text = "AttixZhang"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "https://attixzhangcs.github.io/azhang.github.io"
+        text = "azhang.github.io"
 
     [params.skills]
         enable = true
@@ -47,26 +47,22 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.skills.list]]
         title = "Technical"
         [[params.skills.list.items]]
-        details = "JavaScript/Angular/React/Vue"
+        details = "Java/Spring/Gradle"
         [[params.skills.list.items]]
-        details = "Python/Ruby/PHP"
+        details = "Python/Bash"
         [[params.skills.list.items]]
-        details = "Node.js/ASP.NET"
+        details = "Golang"
         [[params.skills.list.items]]
-        details = "PostgreSQL/MySQL"
+        details = "Docker"
         [[params.skills.list.items]]
-        details = "Object-oriented design"
-        [[params.skills.list.items]]
-        details = "Design and implement database structures"
-        [[params.skills.list.items]]
-        details = "Lead and deliver complex software systems"
+        details = "MongoDB/MySQL/Redis"
 
         [[params.skills.list]]
         title = "Professional"
         [[params.skills.list.items]]
         details = "Effective communication"
         [[params.skills.list.items]]
-        details = "Team player"
+        details = "Scrum Team player"
         [[params.skills.list.items]]
         details = "Strong problem solver"
         [[params.skills.list.items]]
@@ -124,70 +120,27 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
         [[params.experience.list]]
         title = "Software Engineer"
-        dates = "2019 - Present"
+        dates = "2018.7 - 2021.11"
         company = "Indeed Inc."
         details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis."
         [[params.experience.list.items]]
-        details = "Lorem ipsum dolor sit amet, consectetuer."
+        details = "Did the Ant to Gradle migration"
         [[params.experience.list.items]]
-        details = "Aenean commodo ligula eget dolor."
+        details = "Leaded the OSS Gradle migration"
         [[params.experience.list.items]]
-        details = "Etiam ultricies nisi vel augue."
+        details = "Maintain the Gradle plugins"
 
-        [[params.experience.list]]
-        title = "Lead Software Developer"
-        dates = "2016 - 2019"
-        company = "Apple"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel."
-        [[params.experience.list.items]]
-        details = "Lorem ipsum dolor sit amet, consectetuer."
-        [[params.experience.list.items]]
-        details = "Aenean commodo ligula eget dolor."
-
-        [[params.experience.list]]
-        title = "Senior Software Developer"
-        dates = "2014 - 2016"
-        company = "Dropbox"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-
-        [[params.experience.list]]
-        title = "Senior Developer"
-        dates = "2013 - 2014"
-        company = "Uber"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus."
-
-        [[params.experience.list]]
-        title = "Backend Developer"
-        dates = "2014 - 2016"
-        company = "Amazon"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-
-        [[params.experience.list]]
-        title = "Frontend Developer"
-        dates = "2013 - 2014"
-        company = "Startup"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus."
 
     [params.projects]
         enable = true
 
         [[params.projects.list]]
-        title = "Project Lorem Ipsum"
+        title = "My Personal website"
         meta = "Open Source"
         tagline = "You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
 
-        [[params.projects.list]]
-        title = "Project Sed Fringilla"
-        meta = "Open Source"
-        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
-
-        [[params.projects.list]]
-        title = "Project Praesent"
-        meta = "Open Source"
-        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
-
     [params.information]
-        enable = true
+        enable = false
 
         [[params.information.list]]
         title = "Papers"
@@ -205,14 +158,14 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
         [[params.social.list]]
         icon = "fab fa-github-square"
-        url = "//github.com/username"
-        title = "username"
+        url = "//github.com/attix-zhang"
+        title = "attix.zhang.cs@gmail.com"
         [[params.social.list]]
         icon = "fab fa-linkedin"
         url = "//linkedin.com/in/username"
         title = "username"
-        [[params.social.list]]
-        icon = "fab fa-twitter-square"
-        url = "//twitter.com/username"
-        title = "@username"
+        #[[params.social.list]]
+        #icon = "fab fa-twitter-square"
+        #url = "//twitter.com/username"
+        #title = "@username"
 
