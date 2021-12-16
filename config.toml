@@ -1,5 +1,5 @@
 # Page settings
-baseURL = "https://attix-zhang.github.io/blog.github.io/"
+baseURL = "https://attix-zhang.github.io/resume.github.io/"
 languageCode = "en-us"
 title = "Attix Zhang resume"
 theme = "hugo-devresume-theme"
