@@ -1,5 +1,5 @@
 # Page settings
-baseURL = "https://attix-zhang.github.io/resume.github.io/"
+baseURL = "https://attix-zhang.github.io/blog.github.io/"
 languageCode = "en-us"
 title = "Attix Zhang resume"
 theme = "hugo-devresume-theme"
@@ -8,8 +8,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
 [params]
     author = "Attix Zhang"
-    description = "My personal resume."
-
+    description = "A software engineer at Bytedance."
 
     primaryColor = "#54B689"
     textPrimaryColor = "#292929"
@@ -18,7 +17,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
         name = "Attix Zhang"
         tagline = "Software Engineer"
-        avatar = "azhang.jpeg"
+        avatar = "azhang.png"
 
     [params.contact]
         enable = true
@@ -39,7 +38,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.contact.list]]
         icon = "fas fa-globe"
         url = "https://attixzhangcs.github.io/azhang.github.io"
-        text = "azhang.github.io"
+        text = "Github page persional site"
 
     [params.skills]
         enable = true
@@ -47,15 +46,15 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.skills.list]]
         title = "Technical"
         [[params.skills.list.items]]
-        details = "Java/Spring/Gradle"
+        details = "Java/Groovy/Golang/Python/Bash"
         [[params.skills.list.items]]
-        details = "Python/Bash"
-        [[params.skills.list.items]]
-        details = "Golang"
-        [[params.skills.list.items]]
-        details = "Docker"
+        details = "JUnit5/Groovy Spock/Golang Testify/Jest"
         [[params.skills.list.items]]
         details = "MongoDB/MySQL/Redis"
+        [[params.skills.list.items]]
+        details = "Docker/Jenkins"
+        [[params.skills.list.items]]
+        details = "IntelliJ/Vim/VS code"
 
         [[params.skills.list]]
         title = "Professional"
@@ -75,16 +74,20 @@ googleAnalytics = "UA-XXXXXXX-Y"
         degree = "MSc in Computer Science"
         university = "Rice University"
         dates = "2017 - 2018"
+        description = """
+**GPA:** 3.829/4
+"""
         [[params.education.list]]
         degree = "BSc Computer Science and Technology"
         university = "East China Normal University"
         dates = "2012 - 2016"
+        description = "**GPA:** 3.46/4"
 
     [params.awards]
         enable = true
 
         [[params.awards.list]]
-        name = "Indeed Invonation Award"
+        name = "INDEED Engineering Innovation Award"
         body = "Gradle migration"
         date = "2019"
 
@@ -112,23 +115,45 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
     [params.summary]
         enable = true
-        text = "Summarise your career here. Donec quam felis, ultricies nec, pellentesque eu. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.  Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
-
+        text = "Software Engineer with 3+ years experience in the back-end development, Java build tools, dependency resolution and the machine setup. Interested in devising a better problem-solving method for challenging tasks, and learning new technologies and tools if the need arises. "
 
     [params.experience]
         enable = true
-
         [[params.experience.list]]
         title = "Software Engineer"
         dates = "2018.7 - 2021.11"
         company = "Indeed Inc."
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis."
-        [[params.experience.list.items]]
-        details = "Did the Ant to Gradle migration"
-        [[params.experience.list.items]]
-        details = "Leaded the OSS Gradle migration"
-        [[params.experience.list.items]]
-        details = "Maintain the Gradle plugins"
+        details = """
+Software engineer on the Developer Experience team to improve the developing experience for all engineers at Indeed.
+
+During this time, I modernized the Java build system at Indeed by moving the Java build automation tool from Ant to a customized Gradle, got rid of all customizations we made to Gradle so that developers at Indeed could use OSS Gradle, kept upgrading the version of Gradle we are using.
+
+Besides that, I also helped ease the machine setup process and maintained Docker build images.
+
+**Leaded the OSS Gradle Migration**
+
+The customization in Indeed fork of Gradle is switching the dependency resolution strategy to Gradle's newest-first to Maven's nearest-first.
+In order to remove such customizations, I did following things:
+* Made Indeed fork of Gradle could support both dependency resolution strategy and users could switch the strategy via a system property.
+* Wrote a Python script to compare dependencies version difference between two resolution strategies for all of Indeed Java projects (roughly 4000).
+* Identi
+* Wrote automation script to downgrade dependency version for both deployable and library projects.
+* Used Sourcegraph batch change to submit Merge Requests to affected project to help them migrate to OSS Gradle.
+
+**Leaded the Ant to Gradle Migration**
+
+**Maintain the Gradle Plugins**
+
+* Upgraded the Gradle major version from `5` to `6`
+  * Merged the upstream change to Indeed fork of Gradle.
+  * Adjusted the improvement for Gradle plugin developers to our Gradle plugin.
+  * Replaced the usage of Gradle internal API with public API.
+
+"""
+#        [[params.experience.list.items]]
+#        details = "Leaded the OSS Gradle migration"
+#        [[params.experience.list.items]]
+#        details = "Maintain the Gradle plugins"
 
 
     [params.projects]
@@ -137,7 +162,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.projects.list]]
         title = "My Personal website"
         meta = "Open Source"
-        tagline = "You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        tagline = "This project uses Hugo to build a static website and host it via Github Page."
 
     [params.information]
         enable = false
@@ -159,7 +184,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.social.list]]
         icon = "fab fa-github-square"
         url = "//github.com/attix-zhang"
-        title = "attix.zhang.cs@gmail.com"
+        title = "attix-zhang"
         [[params.social.list]]
         icon = "fab fa-linkedin"
         url = "//linkedin.com/in/username"
