@@ -37,7 +37,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         text = "AttixZhang"
         [[params.contact.list]]
         icon = "fas fa-globe"
-        url = "https://attixzhangcs.github.io/azhang.github.io"
+        url = "https://attix-zhang.github.io/blog.github.io"
         text = "Github page persional site"
 
     [params.skills]
