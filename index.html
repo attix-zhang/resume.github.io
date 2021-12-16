@@ -5,11 +5,11 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="My personal resume.">
+<meta name=description content="A software engineer at Bytedance.">
 <meta name=author content="Attix Zhang">
 <link rel="shortcut icon" href=favicon.ico>
 <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
-<link rel=stylesheet href=https://attix-zhang.github.io/resume.github.io/assets/css/devresume.min.6832e93fae6ea272b2bb105c6ba708595ab7cdb121f8b9f29960918405de0053.css>
+<link rel=stylesheet href=https://attix-zhang.github.io/blog.github.io/assets/css/devresume.min.6832e93fae6ea272b2bb105c6ba708595ab7cdb121f8b9f29960918405de0053.css>
 </head>
 <body>
 <div class=main-wrapper>
@@ -26,7 +26,7 @@
 <li class=mb-2><i class="fas fa-phone-square fa-fw fa-lg mr-2"></i><a class=resume-link href=tel:#>+86 159 5684 0143</a></li>
 <li class=mb-2><i class="fas fa-envelope-square fa-fw fa-lg mr-2"></i><a class=resume-link href=mailto:#>attix.zhang.cs@gmail.com</a></li>
 <li class=mb-2><i class="fab fa-weixin fa-fw fa-lg mr-2"></i><a class=resume-link href>AttixZhang</a></li>
-<li class=mb-2><i class="fas fa-globe fa-fw fa-lg mr-2"></i><a class=resume-link href=https://attixzhangcs.github.io/azhang.github.io>azhang.github.io</a></li>
+<li class=mb-2><i class="fas fa-globe fa-fw fa-lg mr-2"></i><a class=resume-link href=https://attixzhangcs.github.io/azhang.github.io>Github page persional site</a></li>
 <li class=mb-0><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2"></i>Beijing, China</li>
 </ul>
 </div>
@@ -35,9 +35,9 @@
 <hr>
 <div class="resume-intro py-3">
 <div class="media flex-column flex-md-row align-items-center">
-<img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src=https://attix-zhang.github.io/resume.github.io/assets/images/azhang.jpeg alt=image>
+<img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src=https://attix-zhang.github.io/blog.github.io/assets/images/azhang.png alt=image>
 <div class="media-body text-left">
-<p class=mb-0>Summarise your career here. Donec quam felis, ultricies nec, pellentesque eu. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+<p class=mb-0>Software Engineer with 3+ years experience in the back-end development, Java build tools, dependency resolution and the machine setup. Interested in devising a better problem-solving method for challenging tasks, and learning new technologies and tools if the need arises.</p>
 </div>
 </div>
 </div>
@@ -53,11 +53,32 @@
 <div class="item-meta col-12 col-md-6 col-lg-6 text-muted text-left text-md-right">Indeed Inc. | 2018.7 - 2021.11</div>
 </div>
 <div class=item-content>
-<p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.</p>
+<p><p>Software engineer on the Developer Experience team to improve the developing experience for all engineers at Indeed.</p>
+<p>During this time, I modernized the Java build system at Indeed by moving the Java build automation tool from Ant to a customized Gradle, got rid of all customizations we made to Gradle so that developers at Indeed could use OSS Gradle, kept upgrading the version of Gradle we are using.</p>
+<p>Besides that, I also helped ease the machine setup process and maintained Docker build images.</p>
+<p><strong>Leaded the OSS Gradle Migration</strong></p>
+<p>The customization in Indeed fork of Gradle is switching the dependency resolution strategy to Gradle&rsquo;s newest-first to Maven&rsquo;s nearest-first.
+In order to remove such customizations, I did following things:</p>
+<ul>
+<li>Made Indeed fork of Gradle could support both dependency resolution strategy and users could switch the strategy via a system property.</li>
+<li>Wrote a Python script to compare dependencies version difference between two resolution strategies for all of Indeed Java projects (roughly 4000).</li>
+<li>Identi</li>
+<li>Wrote automation script to downgrade dependency version for both deployable and library projects.</li>
+<li>Used Sourcegraph batch change to submit Merge Requests to affected project to help them migrate to OSS Gradle.</li>
+</ul>
+<p><strong>Leaded the Ant to Gradle Migration</strong></p>
+<p><strong>Maintain the Gradle Plugins</strong></p>
+<ul>
+<li>Upgraded the Gradle major version from <code>5</code> to <code>6</code>
+<ul>
+<li>Merged the upstream change to Indeed fork of Gradle.</li>
+<li>Adjusted the improvement for Gradle plugin developers to our Gradle plugin.</li>
+<li>Replaced the usage of Gradle internal API with public API.</li>
+</ul>
+</li>
+</ul>
+</p>
 <ul class=resume-list>
-<li>Did the Ant to Gradle migration</li>
-<li>Leaded the OSS Gradle migration</li>
-<li>Maintain the Gradle plugins</li>
 </ul>
 </div>
 </div>
@@ -70,7 +91,7 @@
 <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Open Source</div>
 </div>
 <div class=item-content>
-<p>You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p>This project uses Hugo to build a static website and host it via Github Page.</p>
 </div>
 </div>
 </section>
@@ -83,11 +104,13 @@
 <div class="resume-degree font-weight-bold">MSc in Computer Science</div>
 <div class="resume-degree-org text-muted">Rice University</div>
 <div class="resume-degree-time text-muted">2017 - 2018</div>
+<div class="resume-degree-time text-muted"><strong>GPA:</strong> 3.829/4</div>
 </li>
 <li class=mb-3>
 <div class="resume-degree font-weight-bold">BSc Computer Science and Technology</div>
 <div class="resume-degree-org text-muted">East China Normal University</div>
 <div class="resume-degree-time text-muted">2012 - 2016</div>
+<div class="resume-degree-time text-muted"><strong>GPA:</strong> 3.46/4</div>
 </li>
 </ul>
 </section>
@@ -95,7 +118,7 @@
 <h3 class="text-uppercase resume-section-heading mb-4">Awards</h3>
 <ul class="list-unstyled resume-awards-list">
 <li class=mb-3>
-<div class=font-weight-bold>Indeed Invonation Award</div>
+<div class=font-weight-bold>INDEED Engineering Innovation Award</div>
 <div class=text-muted>Gradle migration</div>
 <div class=text-muted>2019</div>
 </li>
@@ -106,11 +129,11 @@
 <div class=item>
 <h4 class=item-title>Technical</h4>
 <ul class="list-unstyled resume-skills-list">
-<li class=mb-2>Java/Spring/Gradle</li>
-<li class=mb-2>Python/Bash</li>
-<li class=mb-2>Golang</li>
-<li class=mb-2>Docker</li>
+<li class=mb-2>Java/Groovy/Golang/Python/Bash</li>
+<li class=mb-2>JUnit5/Groovy Spock/Golang Testify/Jest</li>
 <li class=mb-2>MongoDB/MySQL/Redis</li>
+<li class=mb-2>Docker/Jenkins</li>
+<li class=mb-2>IntelliJ/Vim/VS code</li>
 </ul>
 </div>
 <div class=item>
@@ -139,7 +162,7 @@
 <li class="list-inline-item mb-lg-0 mr-3">
 <a class=resume-link href=//github.com/attix-zhang target=_blank>
 <i class="fab fa-github-square fa-2x mr-2" data-fa-transform=down-4></i>
-<span class="d-none d-lg-inline-block text-muted">attix.zhang.cs@gmail.com</span>
+<span class="d-none d-lg-inline-block text-muted">attix-zhang</span>
 </a>
 </li>
 <li class="list-inline-item mb-lg-0 mr-3">
